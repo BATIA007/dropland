@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Popups</title>
+</head>
+
+<body>
+  <button id="btn-popup"
+    style="margin: 20px auto; display: block; background: #F99310; padding: 10px 20px; border-radius: 10px; border: none; color: #fff;">Кликните
+    чтобы увидеть
+    попап</button>
+  <!-- 
+      ЭТОТ БЛОК УДАЛИТЬ
+     -->
+  <div style="max-width: 550px; margin: 40px auto;" class="popup__promocode">
+    <h4 class="popup__promocode-title">Promo code <span class="popup__orange">“DROPLAND23”</span> successfully
+      ACTIVATED!</h4>
+    <div class="popup__promocode-buttons">
+      <button class="popup__promocode-btn popup__promocode-btnoj">+10% Get your balance when depositing</button>
+      <button class="popup__promocode-arrow" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 8H3" stroke="#ADADAD" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M8 13L3 8L8 3" stroke="#ADADAD" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div style="max-width: 550px; margin: 40px auto;" class="popup__promocode">
+    <h4 class="popup__promocode-title">Promo code <span class="popup__red">“DROPLAND23”</span> was entered incorrectly!
+    </h4>
+    <div class="popup__promocode-buttons">
+      <button class="popup__promocode-btn popup__promocode-btnred">You entered the wrong code, try again</button>
+      <button class="popup__promocode-arrow" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 8H3" stroke="#ADADAD" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M8 13L3 8L8 3" stroke="#ADADAD" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- 
+      ЭТОТ БЛОК УДАЛИТЬ
+     -->
+  <div style="display: none;" class="popup">
+    <div class="popup__wrapper">
+      <div class="popup__left-container">
+        <div class="popup__left">
+          <h3 class="popup__title">
+            <img src="./img/pay.svg" alt="pay">
+            Filling up the balance
+          </h3>
+          <div class="popup__select-block">
+            <div class="popup__select">
+              <p class="popup__select-text">
+                SELECT YOUR COUNTRY:
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__selected-flag">
+                <span class="popup__selected-value">
+                  Moldova
+                </span>
+              </p>
+            </div>
+            <ul class="popup__select-list">
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Moldova
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Russia
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Belarus
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Moldova
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Russia
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Belarus
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Moldova
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Russia
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Belarus
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Moldova
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Russia
+                </span>
+              </li>
+              <li class="popup__select-link">
+                <img src="./img/flag.svg" alt="flag moldova" class="popup__select-flag">
+                <span class="popup__select-value">
+                  Belarus
+                </span>
+              </li>
+            </ul>
+          </div>
+          <p class="popup__payment">PAYMENT METHODS:</p>
+          <div class="popup__payment-wrapper">
+            <ul class="popup__payment-list">
+              <li data-payment-link="visa" class="popup__payment-link popup__payment-active">
+                <img src="./img/visa.svg" alt="visa" class="popup__payment-img">
+              </li>
+              <li data-payment-link="wallet" class="popup__payment-link popup__payment-wallet">
+                <img src="./img/wallet.svg" alt="wallet" class="popup__payment-img">
+                <p class="popup__payment-text"><span class="popup__payment-grad">WALLET</span> CARD</p>
+                <p class="popup__payment-subtext">PayPal / PaySafeCard</p>
+              </li>
+              <li data-payment-link="payu" class="popup__payment-link">
+                <img src="./img/PayU.svg" alt="PayU" class="popup__payment-img">
+              </li>
+              <li data-payment-link="visa" class="popup__payment-link">
+                <img src="./img/i2i.svg" alt="i2i" class="popup__payment-img">
+              </li>
+              <li data-payment-link="wallet" class="popup__payment-link">
+                <img src="./img/paysera.svg" alt="paysera" class="popup__payment-img">
+              </li>
+              <li data-payment-link="payu" class="popup__payment-link">
+                <img src="./img/neosurf.svg" alt="neosurf" class="popup__payment-img">
+              </li>
+              <li data-payment-link="visa" class="popup__payment-link">
+                <img src="./img/visa.svg" alt="visa" class="popup__payment-img">
+              </li>
+              <li data-payment-link="wallet" class="popup__payment-link popup__payment-wallet">
+                <img src="./img/wallet.svg" alt="wallet" class="popup__payment-img">
+                <p class="popup__payment-text"><span class="popup__payment-grad">WALLET</span> CARD</p>
+                <p class="popup__payment-subtext">PayPal / PaySafeCard</p>
+              </li>
+              <li data-payment-link="payu" class="popup__payment-link">
+                <img src="./img/PayU.svg" alt="PayU" class="popup__payment-img">
+              </li>
+              <li data-payment-link="visa" class="popup__payment-link">
+                <img src="./img/visa.svg" alt="visa" class="popup__payment-img">
+              </li>
+              <li data-payment-link="wallet" class="popup__payment-link popup__payment-wallet">
+                <img src="./img/wallet.svg" alt="wallet" class="popup__payment-img">
+                <p class="popup__payment-text"><span class="popup__payment-grad">WALLET</span> CARD</p>
+                <p class="popup__payment-subtext">PayPal / PaySafeCard</p>
+              </li>
+              <li data-payment-link="payu" class="popup__payment-link">
+                <img src="./img/PayU.svg" alt="PayU" class="popup__payment-img">
+              </li>
+            </ul>
+          </div>
+          <p class="popup__danger">
+            <img src="./img/danger.svg" alt="danger">
+            All payment methods available in the selected country are listed
+          </p>
+          <div class="popup__promocode">
+            <h4 class="popup__promocode-title">DO YOU ALREADY HAVE A CODE?</h4>
+            <p class="popup__promocode-subtitle">if you have a promo code, please enter it here:</p>
+            <form class="popup__promocode-form">
+              <input type="text" placeholder="Enter promo code" class="popup__promocode-input">
+              <button disabled class="popup__promocode-button" type="button">Apply</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup__right-container">
+        <div class="popup__right">
+          <div data-payment="visa" class="popup__visa popup__right-item popup__right-active">
+            <form class="popup__form">
+              <div class="popup__block">
+                <span class="popup__refil popup__label">REFIL AMOUNT:</span>
+                <div class="popup__refil-block">
+                  <div class="popup__block-left">
+                    <div class="popup__input-block">
+                      <span class="popup__dollar">$</span>
+                      <input type="text" placeholder="3.00" class="popup__input popup__refil-input">
+                    </div>
+                    <p class="popup__minimum">Minimum amount: <span class="popup__minimum-price">$3.00</span></p>
+                  </div>
+                  <div class="popup__block-right">
+                    <span class="popup__get">You will get</span>
+                    <span class="popup__get-price">$ <span class="popup__price">5.00</span></span>
+                  </div>
+                </div>
+              </div>
+              <ul class="popup__tabs">
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">3.00</span>
+                </li>
+                <li class="popup__tab popup__tab-active">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">5.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">10.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">20.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">50.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">100.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">200.00</span>
+                </li>
+              </ul>
+              <div class="popup__amount">
+                <img src="./img/doc.svg" alt="doc" class="popup__amount-img">
+                <div class="popup__amount-content">
+                  <h5 class="popup__amount-title">REFIL AMOUNT:</h5>
+                  <p class="popup__amount-text">Sharing KYC data (first name, last name and/or phone number) greatly
+                    increases payment reliability and security.</p>
+                </div>
+                <button type="button" class="popup__amount-button">
+                  <span class="popup__dollar">+</span>Add payment information
+                </button>
+              </div>
+              <input type="checkbox" class="popup__checkbox-input" id="popup-checkbox">
+              <label for="popup-checkbox" class="popup__label-checkbox">
+                <span class="popup__checkbox"></span>
+                <p class="popup__checkbox-text">I accept the terms of the
+                  <a href="https://dropland.net/cards" target="_blank" class="popup__checkbox-link">User Agreement</a>
+                </p>
+              </label>
+              <button class="popup__button" type="button">
+                <img src="./img/pay-white.svg" alt="pay">
+                <span>deposit</span>
+              </button>
+            </form>
+          </div>
+          <div data-payment="wallet" class="popup__wallet popup__right-item">
+            <ul class="popup__switchers">
+              <li data-switch="g2a" class="popup__switch">
+                <svg class="popup__g2a-svg" width="74" height="22" viewBox="0 0 74 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_58_1992)">
+                    <path
+                      d="M32.4077 8.83488C30.8193 8.83496 29.296 9.4603 28.1729 10.5733C27.0498 11.6864 26.4188 13.196 26.4188 14.77V21.4474H43.2251L45.6089 16.9958H31.1191V15.2112C31.1191 14.7004 31.3239 14.2105 31.6883 13.8493C32.0528 13.4881 32.5471 13.2851 33.0625 13.2851L42.5149 13.2843C44.2026 13.2843 45.8212 12.6199 47.0146 11.4373C48.208 10.2546 48.8784 8.65061 48.8784 6.97809C48.8784 5.30557 48.208 3.70155 47.0146 2.5189C45.8212 1.33625 44.2026 0.671844 42.5149 0.671844L31.2663 0.673856C30.6764 0.673848 30.0923 0.788983 29.5473 1.01269C29.0023 1.23639 28.5071 1.56428 28.09 1.97764C27.6728 2.391 27.3419 2.88173 27.1162 3.42181C26.8904 3.96189 26.7743 4.54075 26.7743 5.12533L42.1874 5.12491C42.6804 5.12089 43.1557 5.30707 43.5127 5.64408C43.8698 5.98109 44.0805 6.4425 44.1004 6.93073C44.1073 7.1781 44.064 7.42433 43.9733 7.65487C43.8825 7.88542 43.7461 8.09561 43.572 8.27306C43.398 8.45051 43.1898 8.59161 42.9599 8.68805C42.7299 8.78448 42.4827 8.83429 42.233 8.83454L32.4077 8.83488Z"
+                      fill="white" fill-opacity="0.8" class="popup__g2a-black" />
+                    <path class="popup__g2a-white"
+                      d="M10.757 16.9846C9.17127 16.9846 7.65053 16.3603 6.52928 15.2492C5.40803 14.1381 4.77812 12.631 4.77812 11.0596C4.77812 9.48821 5.40803 7.98117 6.52928 6.87002C7.65053 5.75887 9.17127 5.13464 10.757 5.13464L22.8937 5.12533V0.673859L10.4713 0.682576C7.69413 0.682576 5.03069 1.77587 3.06693 3.72194C1.10317 5.66801 -6.10352e-05 8.30745 -6.10352e-05 11.0596C-6.10352e-05 13.8118 1.10317 16.4512 3.06693 18.3973C5.03069 20.3434 7.69413 21.4366 10.4713 21.4366L22.8937 21.447V8.83446L9.41762 8.83479V13.2864L18.1935 13.2863V16.9956L10.757 16.9846Z"
+                      fill="#E85C00" />
+                    <path class="popup__g2a-white"
+                      d="M60.527 18.921H59.8039C59.4659 18.921 59.1417 19.0541 58.9027 19.2909C58.6637 19.5278 58.5294 19.849 58.5294 20.184C58.5294 20.519 58.6637 20.8402 58.9027 21.0771C59.1417 21.314 59.4659 21.447 59.8039 21.447H60.527C60.8651 21.447 61.1892 21.314 61.4283 21.0771C61.6673 20.8402 61.8015 20.519 61.8015 20.184C61.8015 19.849 61.6673 19.5278 61.4283 19.2909C61.1892 19.0541 60.8651 18.921 60.527 18.921ZM60.5011 20.919H59.8299C59.6332 20.919 59.4446 20.8416 59.3055 20.7038C59.1664 20.5659 59.0883 20.379 59.0883 20.1841C59.0883 19.9892 59.1664 19.8022 59.3055 19.6644C59.4446 19.5266 59.6332 19.4492 59.8299 19.4492H60.5011C60.6978 19.4492 60.8864 19.5266 61.0255 19.6644C61.1646 19.8022 61.2427 19.9892 61.2427 20.1841C61.2427 20.379 61.1646 20.5659 61.0255 20.7038C60.8864 20.8416 60.6978 20.919 60.5011 20.919Z"
+                      fill="#0080BB" />
+                    <path class="popup__g2a-white"
+                      d="M55.4445 20.184C55.4449 20.5188 55.5793 20.8399 55.8182 21.0767C56.0571 21.3134 56.3811 21.4466 56.719 21.447H58.1761V20.919H56.745C56.5483 20.919 56.3597 20.8416 56.2206 20.7038C56.0816 20.5659 56.0034 20.379 56.0034 20.1841C56.0034 19.9892 56.0816 19.8022 56.2206 19.6644C56.3597 19.5266 56.5483 19.4492 56.745 19.4492H58.1761V18.921H56.719C56.3811 18.9214 56.0571 19.0546 55.8182 19.2913C55.5793 19.5281 55.4449 19.8491 55.4445 20.184Z"
+                      fill="#0080BB" />
+                    <path class="popup__g2a-white"
+                      d="M64.6229 18.921L64.0672 20.434L63.5114 18.921H62.8077L61.8629 21.4466H62.4626L63.1596 19.5069L63.7804 21.1976H64.3539L64.9748 19.5069L65.6718 21.4466H66.2706L65.3267 18.921H64.6229Z"
+                      fill="#0080BB" />
+                    <path class="popup__g2a-white"
+                      d="M54.7872 21.4471C54.9795 21.4471 55.1354 21.2926 55.1354 21.102C55.1354 20.9115 54.9795 20.757 54.7872 20.757C54.595 20.757 54.4391 20.9115 54.4391 21.102C54.4391 21.2926 54.595 21.4471 54.7872 21.4471Z"
+                      fill="#0080BB" />
+                    <path class="popup__g2a-white"
+                      d="M64.2607 3.06727C63.9145 2.39276 63.4222 1.8024 62.819 1.3384C62.1127 0.818067 61.2534 0.542002 60.3734 0.552634C59.5134 0.542015 58.675 0.818826 57.9933 1.3384C57.3901 1.8024 56.8978 2.39276 56.5516 3.06727C52.6255 10.479 46.7466 21.4474 46.7466 21.4474H52.1115L60.3734 5.76162L64.256 13.1334H58.2781L60.3856 17.1215H66.3567L68.6352 21.4474H74C74 21.4474 68.1867 10.479 64.2607 3.06727Z"
+                      fill="#0080BB" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_58_1992">
+                      <rect width="74" height="22" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
+              <li data-switch="kinguin" class="popup__switch popup__switch-active">
+                <img src="./img/ping.svg" alt="kinguin">
+              </li>
+            </ul>
+            <div data-switched="g2a" class="popup__switch-container">
+              <h5 class="popup__choose-title">Choose the wallet code</h5>
+              <p class="popup__choose-text">We will redirect you to the page of the selected store.</p>
+              <div class="popup__wallet-block">
+                <ul class="popup__cards">
+                  <li class="popup__card">
+                    <a href="https://dropland.net/cards" class="popup__card-link">
+                      <img src="./img/1.png" alt="card-img" class="popup__card-img">
+                    </a>
+                  </li>
+                  <li class="popup__card">
+                    <a href="https://dropland.net/cards" class="popup__card-link">
+                      <img src="./img/2.png" alt="card-img" class="popup__card-img">
+                    </a>
+                  </li>
+                  <li class="popup__card">
+                    <a href="https://dropland.net/cards" class="popup__card-link">
+                      <img src="./img/3.png" alt="card-img" class="popup__card-img">
+                    </a>
+                  </li>
+                </ul>
+                <span class="popup__divine"></span>
+                <div class="popup__code">
+                  <div class="popup__code-left">
+                    <h5 class="popup__code-title">Do you already have a code?</h5>
+                    <p class="popup__code-text">If you have a code, please enter it here:</p>
+                  </div>
+                  <form class="popup__promocode-form popup__wallet-form">
+                    <input type="text" placeholder="Enter the Wallet code" class="popup__promocode-input">
+                    <button disabled class="popup__promocode-button" type="button">Apply</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div data-switched="kinguin" class="popup__switch-container popup__switched-active">
+              <h5 class="popup__choose-title">Choose the wallet code</h5>
+              <p class="popup__choose-text">We will redirect you to the page of the selected store.</p>
+              <div class="popup__wallet-block">
+                <ul class="popup__cards">
+                  <li class="popup__card">
+                    <a href="https://dropland.net/cards" class="popup__card-link">
+                      <img src="./img/1.png" alt="card-img" class="popup__card-img">
+                    </a>
+                  </li>
+                  <li class="popup__card">
+                    <a href="https://dropland.net/cards" class="popup__card-link">
+                      <img src="./img/2.png" alt="card-img" class="popup__card-img">
+                    </a>
+                  </li>
+                  <li class="popup__card">
+                    <a href="https://dropland.net/cards" class="popup__card-link">
+                      <img src="./img/3.png" alt="card-img" class="popup__card-img">
+                    </a>
+                  </li>
+                  <li class="popup__card">
+                    <a href="https://dropland.net/cards" class="popup__card-link">
+                      <img src="./img/4.png" alt="card-img" class="popup__card-img">
+                    </a>
+                  </li>
+                  <li class="popup__card">
+                    <a href="https://dropland.net/cards" class="popup__card-link">
+                      <img src="./img/5.png" alt="card-img" class="popup__card-img">
+                    </a>
+                  </li>
+                  <li class="popup__card">
+                    <a href="https://dropland.net/cards" class="popup__card-link">
+                      <img src="./img/6.png" alt="card-img" class="popup__card-img">
+                    </a>
+                  </li>
+                </ul>
+                <span class="popup__divine"></span>
+                <div class="popup__code">
+                  <div class="popup__code-left">
+                    <h5 class="popup__code-title">Do you already have a code?</h5>
+                    <p class="popup__code-text">If you have a code, please enter it here:</p>
+                  </div>
+                  <form class="popup__promocode-form popup__wallet-form">
+                    <input type="text" placeholder="Enter the Wallet code" class="popup__promocode-input">
+                    <button disabled class="popup__promocode-button" type="button">Apply</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-payment="payu" class="popup__payu popup__right-item">
+            <form class="popup__form">
+              <div class="popup__block">
+                <div class="popup__contact">
+                  <div class="popup__contact-block">
+                    <span class="popup__label">FULLNAME:</span>
+                    <input type="text" placeholder="Name Surname" class="popup__input">
+                  </div>
+                  <div class="popup__contact-block">
+                    <span class="popup__label">EMAIL:</span>
+                    <input type="email" placeholder="Your e-mail address" class="popup__input">
+                  </div>
+                </div>
+                <span class="popup__refil popup__label">REFIL AMOUNT:</span>
+                <div class="popup__refil-block">
+                  <div class="popup__block-left">
+                    <div class="popup__input-block">
+                      <span class="popup__dollar">$</span>
+                      <input type="text" placeholder="3.00" class="popup__input popup__refil-input">
+                    </div>
+                    <p class="popup__minimum">Minimum amount: <span class="popup__minimum-price">$3.00</span></p>
+                  </div>
+                  <div class="popup__block-right">
+                    <span class="popup__get">You will get</span>
+                    <span class="popup__get-price">$ <span class="popup__price">5.00</span></span>
+                  </div>
+                </div>
+              </div>
+              <ul class="popup__tabs">
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">3.00</span>
+                </li>
+                <li class="popup__tab popup__tab-active">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">5.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">10.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">20.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">50.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">100.00</span>
+                </li>
+                <li class="popup__tab">
+                  <span class="popup__dollar">$</span>
+                  <span class="popup__tab-value">200.00</span>
+                </li>
+              </ul>
+              <div class="popup__amount">
+                <img src="./img/doc.svg" alt="doc" class="popup__amount-img">
+                <div class="popup__amount-content">
+                  <h5 class="popup__amount-title">REFIL AMOUNT:</h5>
+                  <p class="popup__amount-text">Sharing KYC data (first name, last name and/or phone number) greatly
+                    increases payment reliability and security.</p>
+                </div>
+                <button type="button" class="popup__amount-button">
+                  <span class="popup__dollar">+</span>Add payment information
+                </button>
+              </div>
+              <input type="checkbox" class="popup__checkbox-input" id="popup-checkbox2">
+              <label for="popup-checkbox2" class="popup__label-checkbox">
+                <span class="popup__checkbox"></span>
+                <p class="popup__checkbox-text">I accept the terms of the
+                  <a href="https://dropland.net/cards" target="_blank" class="popup__checkbox-link">User Agreement</a>
+                </p>
+              </label>
+              <button class="popup__button" type="button">
+                <img src="./img/pay-white.svg" alt="pay">
+                <span>deposit</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="popup__close">
+      <img src="./img/close.svg" alt="close">
+    </span>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
